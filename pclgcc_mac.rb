@@ -61,7 +61,7 @@ def install
     end
 
     mkdir "build" do
-      system "cmake", "..", *args
+      system "CXX=/usr/local/bin/g++-7 cmake", "..", *args
       system "make", "install"
       prefix.install Dir["#{bin}/*.app"]
     end
