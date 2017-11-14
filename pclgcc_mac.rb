@@ -1,4 +1,4 @@
-class Pclgcc_mac < Formula
+class PclgccMac < Formula
   desc "Library for 2D/3D image and point cloud processing"
   homepage "http://www.pointclouds.org/"
   url "https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz"
