@@ -40,6 +40,8 @@ def install
       -DWITH_DOCS:BOOL=OFF
       -DWITH_QT:BOOL=FALSE
       -DWITH_TUTORIALS:BOOL=OFF
+      -DCMAKE_C_COMPILER="/usr/local/bin/gcc-7"
+      -DCMAKE_CXX_COMPILER="/usr/local/bin/g++-7"
     ]
 
     if build.head?
@@ -61,7 +63,7 @@ def install
     end
 
     mkdir "build" do
-      system "CXX='/usr/local/bin/g++-7' cmake", "..", *args
+      system "cmake", "..", *args
       system "make", "install"
       prefix.install Dir["#{bin}/*.app"]
     end
