@@ -37,7 +37,7 @@ def install
       -DBUILD_people:BOOL=AUTO_OFF
       -DBUILD_simulation:BOOL=AUTO_OFF
       -DWITH_CUDA:BOOL=OFF
-      -DWITH_DOCS:BOOL=OFF
+      -DWITH_DOCS:BOOL=ON
       -DWITH_QT:BOOL=FALSE
       -DWITH_TUTORIALS:BOOL=OFF
       -DCMAKE_C_COMPILER="/usr/local/bin/gcc-7"
